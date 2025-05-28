@@ -65,7 +65,7 @@ class format_topics extends core_courseformat\base {
     public function get_section_name($section) {
         $section = $this->get_section($section);
         if ((string)$section->name !== '') {
-            return format_string($section->name, true,
+            return format_string('x' . $section->name . 'x', true,
                 ['context' => context_course::instance($this->courseid)]);
         } else {
             return $this->get_default_section_name($section);
