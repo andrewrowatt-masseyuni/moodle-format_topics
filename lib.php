@@ -459,6 +459,10 @@ class format_topics extends core_courseformat\base {
     }
 }
 
+function ajr1(): void {
+    // here
+}
+
 /**
  * Implements callback inplace_editable() allowing to edit values in-place.
  *
